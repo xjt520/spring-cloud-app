@@ -1,0 +1,41 @@
+#server:
+#  port: 1111
+
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+#eureka:
+#  client:
+#    register-with-eureka: false
+#    fetch-registry: false
+#    registerWithEureka: false
+#    fetchRegistry: false
+#    serviceUrl:
+#          defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#    eureka-server-u-r-l-context: http://localhost:${server.port}/eureka/​​​
+#    healthcheck:
+#          enabled: true
+#  instance​:
+#    hostname: localhost
+#    statusPageUrlPath: ${management.context-path}/info
+#    healthCheckUrlPath: ${management.context-path}/health
+#    homePageUrl: https://${eureka.hostname}/
+#    statusPageUrl: https://${eureka.hostname}/info
+#    healthCheckUrl: https://${eureka.hostname}/health
+#
+
+
+#eureka
+#  client
+#    register-with-eureka=false
+#eureka.client.fetch-registry=false
+#eureka.client.serviceUrl.defaultZone=http://localhost:${server.port}/eureka/​​​
