@@ -1,0 +1,14 @@
+#server:
+#  port: 1111
+spring:
+  application:
+    name : config-server​
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/xjt520/spring-cloud-app.git
+          search-paths: cloud-config-repo
+server:
+  port: 7001
+
