@@ -1,8 +1,10 @@
-#server:
-#  port: 1111
 spring:
   application:
     name : config-client
+  cloud:
+    config:
+      profile: dev
+      uri: http://localhost:7001/​
 server:
-  port: 8001
+  port: 7002
 
