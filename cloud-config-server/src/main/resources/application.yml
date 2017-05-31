@@ -7,7 +7,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/xjt520/spring-cloud-app.git
+          uri: https://github.com/xjt520/spring-cloud-app
           search-paths: cloud-config-repo
 server:
   port: 7001
