@@ -15,7 +15,6 @@
         <module>cloud-feign-consumer</module>
         <module>cloud-config</module>
         <module>cloud-config-server</module>
-        <module>cloud-config-repo</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
