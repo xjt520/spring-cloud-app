@@ -1,0 +1,23 @@
+server:
+    port: 8080
+
+spring:
+  application:
+    name: cloud-zuul
+
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      url: http://localhost:2222
+#    api-a:
+#      path: /api-a/**
+#      serviceId: client-service​
+#    api-b:
+#      path: /api-b/**
+#      serviceId: service-B
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone​: http://localhost:8761/eureka/
