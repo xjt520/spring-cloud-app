@@ -17,6 +17,7 @@
         <module>cloud-config-server</module>
         <module>cloud-zuul</module>
         <module>boot-rabbitmq</module>
+        <module>boot-docker</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
